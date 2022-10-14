@@ -27,8 +27,8 @@ module.exports.logIn = async (
   }
 
   if (username && password) {
-    await page.type('#txt-username', username);
-    await page.type('#txt-password', password);
+    await page.type('txt-username', username);
+    await page.type('txt-password', password);
 
     const logInButton = await page.waitForSelector('#btn-login');
     await Promise.all([logInButton.click(), page.waitForNavigation()]);
