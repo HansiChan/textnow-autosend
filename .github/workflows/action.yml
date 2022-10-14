@@ -35,4 +35,4 @@ jobs:
           TEXTNOW_MESSAGE: ${{secrets.TEXTNOW_MESSAGE}}
           CAPTCHA_TOKEN: ${{secrets.CAPTCHA_TOKEN}}
         run: |
-          npm start
+          node index.js
